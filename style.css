@@ -7,9 +7,10 @@
     overflow: hidden;
 }
 
+/* Rest of your CSS remains unchanged */
 .slider .list {
     position: absolute;
-    width: 100%; /* Set to 100% to ensure it takes full width */
+    width: max-content;
     height: 100%;
     left: 0;
     top: 0;
@@ -18,9 +19,9 @@
 }
 
 .slider .list img {
-    width: 100%; /* Ensure the images are 100% width */
-    height: 100%; /* Ensure the images maintain height */
-    object-fit: cover; /* Cover ensures images fill the space without distortion */
+    width: 100%; /* Adjust the width to 100% for mobile responsiveness */
+    height: 100%;
+    object-fit: cover;
 }
 
 .slider .buttons {
@@ -75,13 +76,8 @@
         margin-top: 10px; /* Adjust top margin for mobile if needed */
     }
 
-    .slider .list {
-        width: 100%; /* Ensure the list takes full width on mobile */
-    }
-
     .slider .list img {
         width: 100%; /* Ensure full width on smaller screens */
-        height: auto; /* Adjust height to maintain aspect ratio */
     }
 
     .slider .buttons {
