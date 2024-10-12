@@ -73,8 +73,7 @@
 @media screen and (max-width: 768px) {
     .slider {
         width: 100%;
-        height: 300px; /* Reduce height for mobile screens */
-        margin-top: 30px; /* Adjust top margin for mobile if needed */
+        height: 340px;
     }
 
     .slider .list img {
