@@ -69,7 +69,56 @@
 .slider .dots li.active {
     width: 30px;
 }
+.container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 50px;
+        }
 
+        .custom-button {
+            display: flex;
+            align-items: center;
+            background-color: white;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            padding: 10px;
+            width: 300px;
+            text-align: left;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .custom-button:hover {
+            transform: scale(1.05);
+        }
+
+        .button-img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+
+        .button-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .button-text h1 {
+            margin: 0;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .button-text p {
+            margin: 0;
+            font-size: 14px;
+            color: #777;
+        }
 @media screen and (max-width: 768px) {
     .slider {
         width: 100%;
