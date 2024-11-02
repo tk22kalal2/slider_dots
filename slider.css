@@ -164,6 +164,7 @@ body {
   gap: 20px;
 }
 
+
 .blog-image {
   width: 100%;
   max-width: 400px;
@@ -201,6 +202,24 @@ body {
 
 .blog-content-wrapper.expanded {
   max-height: none; /* Remove the height limit when expanded */
+}
+
+.blog-content.expanded {
+  flex-direction: column;
+  align-items: center;
+}
+
+.blog-image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: width 0.3s ease-in-out;
+}
+
+.blog-content.expanded .blog-image {
+  max-width: 100%;
+  width: 100%;
 }
 
 .read-more-btn {
