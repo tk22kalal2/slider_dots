@@ -4,8 +4,9 @@ const readMoreButtons = document.querySelectorAll('.read-more-btn');
 // Add a click event listener for each button
 readMoreButtons.forEach((button) => {
   button.addEventListener('click', function() {
-    const contentWrapper = this.parentElement.querySelector('.blog-content-wrapper');
-    
+    // Find the content wrapper by going to the previous sibling
+    const contentWrapper = this.previousElementSibling;
+
     // Toggle the 'expanded' class on the content wrapper
     if (contentWrapper.classList.contains('expanded')) {
       contentWrapper.classList.remove('expanded');
