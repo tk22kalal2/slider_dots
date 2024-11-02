@@ -200,8 +200,9 @@ body {
 }
 
 .blog-content-wrapper.expanded {
-  max-height: none; /* Remove the height limit when expanded */
+  max-height: none;
 }
+
 
 .read-more-btn {
   display: block;
