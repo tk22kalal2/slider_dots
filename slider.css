@@ -193,21 +193,32 @@ body {
   color: #555;
 }
 
-.read-more-button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #0073e6;
-  color: #ffffff;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
+.blog-content-wrapper {
+  max-height: 200px;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
 }
 
-.read-more-button:hover {
-  background-color: #005bb5;
+.blog-content-wrapper.expanded {
+  max-height: none; /* Remove the height limit when expanded */
 }
 
+.read-more-btn {
+  display: block;
+  margin-left: auto;
+  margin-top: 20px;
+  background-color: #0077cc;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.read-more-btn:hover {
+  background-color: #005fa3;
+}
 
 @media screen and (max-width: 768px) {
     .slider {
