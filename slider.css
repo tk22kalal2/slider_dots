@@ -130,7 +130,6 @@ body {
 .blog-section {
   background-color: #f9f9f9; /* Background color for the section */
   padding: 40px 20px; /* Padding for the section */
-  text-align: center; /* Center align text */
 }
 
 .blog-container {
@@ -156,9 +155,7 @@ body {
 }
 
 .blog-content {
-  display: flex; /* Flexbox layout */
-  align-items: flex-start; /* Align items at the top */
-  gap: 20px; /* Gap between image and text */
+  display: flex; /* Use flexbox for layout */
 }
 
 .blog-image {
@@ -166,13 +163,13 @@ body {
   max-width: 400px; /* Maximum width of the image */
   border-radius: 8px; /* Rounded corners for the image */
   object-fit: cover; /* Maintain aspect ratio */
+  margin-right: 20px; /* Space between image and text */
 }
 
 .blog-text {
   flex: 1; /* Allow text to fill available space */
   display: flex; /* Flexbox for text */
   flex-direction: column; /* Stack content vertically */
-  justify-content: space-between; /* Space between content */
 }
 
 .blog-text p {
@@ -218,6 +215,7 @@ body {
 .read-more-btn:hover {
   background-color: #005fa3; /* Darker background on hover */
 }
+
 
 @media screen and (max-width: 768px) {
   .slider {
