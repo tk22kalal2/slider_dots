@@ -172,8 +172,9 @@ body {
 }
 
 .blog-text {
-  flex: 1;
-  text-align: left;
+    flex: 1; /* Allow text to fill available space */
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
 }
 
 .blog-text p {
