@@ -127,118 +127,98 @@ body {
   color: #777;
 }
 
+/* Blog Section Styling */
 .blog-section {
-  background-color: #f9f9f9; /* Background color for the section */
-  padding: 40px 20px; /* Padding for the section */
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  text-align: center;
 }
 
 .blog-container {
-  max-width: 1000px; /* Maximum width of the blog container */
-  margin: 0 auto; /* Center the container */
-  padding: 20px; /* Padding inside the container */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Shadow effect */
-  background-color: #ffffff; /* Background color for the container */
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
 }
 
 .blog-title {
-  font-size: 2rem; /* Title font size */
-  font-weight: bold; /* Bold title */
-  color: #333; /* Title color */
-  margin-bottom: 10px; /* Margin below the title */
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
 }
 
 .blog-subtitle {
-  font-size: 1.25rem; /* Subtitle font size */
-  color: #666; /* Subtitle color */
-  margin-bottom: 20px; /* Margin below the subtitle */
+  font-size: 1.25rem;
+  color: #666;
+  margin-bottom: 20px;
 }
 
 .blog-content {
-  display: flex; /* Use flexbox for layout */
-  flex-wrap: nowrap; /* Prevent wrapping */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .blog-image {
-  width: auto; /* Maintain original width */
-  max-width: 400px; /* Maximum width of the image */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 8px; /* Rounded corners for the image */
-  object-fit: cover; /* Maintain aspect ratio */
-  margin-right: 20px; /* Space between image and text */
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  object-fit: cover;
 }
 
 .blog-text {
-  flex: 1; /* Allow text to fill available space */
-  display: flex; /* Flexbox for text */
-  flex-direction: column; /* Stack content vertically */
-}
-
-.blog-content-wrapper {
-  overflow: hidden; /* Hide overflow */
-  transition: max-height 0.3s ease-in-out; /* Smooth transition for expansion */
-}
-
-.blog-content-wrapper.expanded {
-  max-height: none; /* Remove height limit when expanded */
+  flex: 1;
+  text-align: left;
 }
 
 .blog-text p {
-  font-size: 1rem; /* Font size for paragraphs */
-  color: #555; /* Text color */
-  line-height: 1.6; /* Line height for readability */
-  margin-bottom: 20px; /* Margin below paragraphs */
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
 }
 
 .blog-text ul {
-  padding-left: 20px; /* Indent for list */
+  padding-left: 20px;
 }
 
 .blog-text ul li {
-  list-style: disc; /* Disc style for list items */
-  margin-bottom: 10px; /* Margin below list items */
-  color: #555; /* Color for list items */
+  list-style: disc;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.blog-content-wrapper {
+  max-height: 200px;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.blog-content-wrapper.expanded {
+  max-height: none; /* Remove the height limit when expanded */
 }
 
 .read-more-btn {
-  display: block; /* Block display for the button */
-  margin-top: 10px; /* Space above the button */
-  background-color: #0077cc; /* Button background color */
-  color: #fff; /* Button text color */
-  padding: 8px 16px; /* Padding inside the button */
-  border: none; /* No border */
-  border-radius: 4px; /* Rounded corners */
-  cursor: pointer; /* Pointer cursor on hover */
-  font-size: 16px; /* Font size for button text */
+  display: block;
+  margin-left: auto;
+  margin-top: 20px;
+  background-color: #0077cc;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
 }
 
 .read-more-btn:hover {
-  background-color: #005fa3; /* Darker background on hover */
+  background-color: #005fa3;
 }
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .blog-content {
-    flex-direction: column; /* Stack image and text vertically */
-    align-items: flex-start; /* Align items to the start */
-  }
-
-  .blog-image {
-    max-width: 100%; /* Allow image to scale down */
-    height: auto; /* Maintain aspect ratio */
-    margin-bottom: 20px; /* Space below image */
-  }
-
-  .blog-container {
-    padding: 10px; /* Reduce padding on mobile */
-  }
-
-  .blog-text p, .blog-text ul {
-    max-width: 100%; /* Ensure text does not overflow */
-  }
-}
-
-
 
 @media screen and (max-width: 768px) {
   .slider {
