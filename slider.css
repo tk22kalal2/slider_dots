@@ -127,6 +127,77 @@ body {
     color: #777;
 }
 
+/* Blog Section Styling */
+.blog-section {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.blog-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.blog-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.blog-subtitle {
+  font-size: 1.25rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.blog-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.blog-image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.blog-text {
+  flex: 1;
+  text-align: left;
+}
+
+.blog-text p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.read-more-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0073e6;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.read-more-button:hover {
+  background-color: #005bb5;
+}
+
 @media screen and (max-width: 768px) {
     .slider {
         width: 100%;
